@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/Homepage.dart';
+import 'package:whatsapp_clone/Common/theme/dark_theme.dart';
+import 'package:whatsapp_clone/Common/theme/light_theme.dart';
+import 'package:whatsapp_clone/welcome_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +15,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      home: HomePage(),
+      theme: lightTheme(),
+      darkTheme: darkTheme(),
+      themeMode: ThemeMode.system,
+      home: WelcomePage(),
     );
   }
 }
