@@ -20,7 +20,7 @@ class WelcomePage extends StatelessWidget {
                     const EdgeInsets.symmetric(horizontal: 50, vertical: 10),
                 child: Image.asset(
                   'assets/images/circle.png',
-                  color:context.theme.cicleImageColor,
+                  color:context.theme.circleImageColor,
                 ),
               ),
             )),
