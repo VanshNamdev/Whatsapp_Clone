@@ -11,7 +11,9 @@ ThemeData darkTheme(){
     extensions:[
         CustomThemeExtension.darkMode,
     ],
-    appBarTheme: AppBarTheme(systemOverlayStyle: SystemUiOverlayStyle(
+    appBarTheme: const AppBarTheme(
+      titleTextStyle: TextStyle(fontSize: 18),
+      systemOverlayStyle: SystemUiOverlayStyle(
       statusBarColor: Colors.transparent,
       statusBarBrightness: Brightness.light
     )),
@@ -31,6 +33,12 @@ ThemeData darkTheme(){
         borderRadius: BorderRadius.vertical(
           top: Radius.circular(20)
         )
+      )
+    ),
+    dialogBackgroundColor: Coloors.greyBackground,
+    dialogTheme: DialogTheme(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10),
       )
     )
   );

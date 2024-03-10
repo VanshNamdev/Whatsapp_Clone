@@ -32,6 +32,12 @@ ThemeData lightTheme(){
           top: Radius.circular(20)
         )
       )
+    ),
+    dialogBackgroundColor: Coloors.backgroundLight,
+    dialogTheme: DialogTheme(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10),
+      )
     )
   );
 }

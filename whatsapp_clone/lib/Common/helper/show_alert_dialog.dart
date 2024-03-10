@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/Common/extension/custom_theme_extension.dart';
 
 showAlertDialog(
-    {required BuildContext context, required String message, String? btnText}) {
+    {required BuildContext context, 
+    required String message, 
+    String? btnText}) {
   return showDialog(
       context: context,
       builder: (builder) {
@@ -20,7 +22,7 @@ showAlertDialog(
               onPressed: () => Navigator.of(context).pop(),
               child: Text(
                 btnText ?? "OK",
-                style: TextStyle(color: context.theme.circleImageColor),
+                style: TextStyle(color: context.theme.authAppbarTextColor,fontWeight: FontWeight.w900),
               ),
             ),
           ],

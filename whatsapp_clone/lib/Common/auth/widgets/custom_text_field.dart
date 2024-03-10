@@ -13,7 +13,9 @@ class CustomTextField extends StatelessWidget {
     this.prefixText, 
     this.onTap, 
     this.sufficIcon, 
-    this.onChanged
+    this.onChanged, 
+    this.fontSize, 
+    this.autofocus
     });
 
   final TextEditingController? controller;
@@ -25,6 +27,8 @@ class CustomTextField extends StatelessWidget {
   final VoidCallback? onTap;
   final Widget? sufficIcon;
   final Function(String)? onChanged;
+  final double? fontSize;
+  final bool? autofocus;
 
 
   @override
@@ -36,6 +40,8 @@ class CustomTextField extends StatelessWidget {
       textAlign: textAlign?? TextAlign.center,
       keyboardType: readOnly == null ? keyboardType: null ,
       onChanged: onChanged,
+      style: TextStyle(fontSize: fontSize),
+      autofocus: autofocus??false,
       decoration: InputDecoration(
         isDense: true,
         prefixText: prefixText,
